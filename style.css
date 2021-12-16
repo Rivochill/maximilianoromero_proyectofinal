@@ -1,19 +1,36 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
-    background-color: lightseagreen;
+    background-color: #fefefe;
     color: white;
 }
 
-h1 {
+h4 {
     text-align: center;
-    color: darkslategrey;
+    color: black;
+}
+
+h5 {
+    text-align: auto;
+    color: black;
+}
+
+h1 {
+    color: black;
+}
+
+p{
+    color: black;
 }
 
 .card {
+    
     margin-top: 30px;
     margin-bottom: 30px;
     width: 30%;
@@ -24,6 +41,7 @@ h1 {
 }
 
 .card-body {
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -42,7 +60,7 @@ form {
 .li-container {
     background-color: white;
     width: 100%;
-    color: darkslategray;
+    color: darkgrey;
     margin-top: 20px;
 }
 
@@ -53,7 +71,7 @@ ul {
 li {
     list-style: none;
     background-color: lightgray;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 15px;
     display: flex;
 }
@@ -67,20 +85,21 @@ li p {
 .btn-delete {
     margin-left: auto;
     border: none;
-    background-color: #e31746;
+    background-color: darkorange;
     color: white;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 10px 10px;
     outline: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     width: 10%;
     font-size: 1.2em;
 }
 
 .btn-delete:hover {
     cursor: pointer;
-    background-color: lightseagreen;
+    background-color: red;
+    transition: ease 0.3s;
 }
 
 .btn-add {
@@ -88,16 +107,36 @@ li p {
     border: none;
     color: white;
     font-family: fantasy;
-    background-color: teal;
+    background-color: darkgrey;
     font-size: 1.4rem;
     outline: none;
 }
 
 .btn-add:hover {
+    transition: ease 0.3s;
     cursor: pointer;
-    background-color: darkcyan;
+    background-color: darkorange;
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+    
 }
 
 .empty {
-    color: darkslategrey;
+    color: black;
+}
+
+#allGreen {
+    color: darkgreen;
+}
+
+#logo {
+    color: white;
+}
+
+#logoContainer{
+    align-items: center;
+}
+
+a.link-dark:hover {
+    transition: ease 0.3s;
+    color: red;
 }

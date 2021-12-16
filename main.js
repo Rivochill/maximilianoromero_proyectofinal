@@ -45,7 +45,7 @@ function addDeleteBtn() {
 
     /*El botón tendrá como contenido una "X" a modo de simbolizar el icono para cerrar/borrar*/
 
-    deleteBtn.textContent = "X";
+    deleteBtn.textContent ="X";
     deleteBtn.className = "btn-delete";
 
     /*Agregamos un listener que cuando escuche un evento que tomara el elemento padre y lo removera del <ul> eliminandose por completo el item */

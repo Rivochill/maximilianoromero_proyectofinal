@@ -6,31 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
     
     <title>Lista de tareas</title>
 </head>
 <body>
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h1>Lista de Tareas</h1>
-            <div class="search">
-                <form>
-                    <input id=input type="text" placeholder="Agregar tarea...">
-                    <button class="btn-add">+</button>
-                </form>
-            </div>
-            <div class="li-container">
-                <ul>
-
-                </ul>
-            </div>
-            <div class="empty">
-                <p>No tienes tareas pendientes.</p>
-            </div>
-        </div>    
-    </div>
+    <nav class="navbar navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <div class="container" id="logoContainer">
+                    <i id="logo" class="bi bi-code-slash"></i></a>
+                </div>
+        </div>
+    </nav>
     
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                
+                <h1><strong>Proyecto realizado para el curso de desarrollo web del IEN - COM 54 </strong></h1>
+                
+                <br><br>
+                
+                <h5><strong>¡Hola!</strong></h5>
+                <br>
+                <p>mi nombre es Victor Maximiliano Romero, tengo 30 años, estudié Diseño Gráfico en la UNNE, Fotografía y Edición Multimedia de manera autodidácta.
+                <br><br>
+                Actualmente me encuentro estudiando desarrollo y diseño web brindado por el Instituto Económico Nacional, también tomé cursos on-line como el informatorio aprobando dos etapas, Introduccion a la Programación y Desarrollo web con Django. Y con ganas de seguir capacitandome en desarrollo front end y en testing manual.</p>
+                <br>
+                <p><strong>Aquí debajo dejo links a mis redes sociales.</strong></p>
+                <br><br>
+                
+                    <a href="https://www.linkedin.com/in/maximiliano-romero-252448184/" target="_blank" class="link-dark"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.instagram.com/_maxromero/?hl=es-la" target="_blank" class="link-dark"><i class="bi bi-instagram"></i></a>
+                    <a href="https://github.com/Rivochill" target="_blank" class="link-dark"><i class="bi bi-github"></i></a>
+                
+            </div>
+            
+            <div class="col">
+                <div class="card d-flex justify-content-center" style="width: 22rem;">
+                    <div class="card-body">
+                        <h4><strong>¿Que tienes que hacer?</strong></h4><br>
+                        <div class="search">
+                            <form>
+                                <input id=input type="text" placeholder="Agregar tarea...">
+                                <button class="btn-add">+</button>
+                            </form>
+                        </div>
+                        <div class="li-container">
+                            <ul>
+            
+                            </ul>
+                        </div>
+                        <div class="empty">
+                            
+                            <br>
+                            <p><strong>¡Hurra!</strong> No tienes más tareas. <i class="bi bi-check fa-lg" id="allGreen"></i> </p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    
+        <!-- Footer -->
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <span class="text-muted">© 2021 Romero Victor Maximiliano, IEN - COM 54</span>
+            </div>   
+        </footer>
+        <!-- Fin Footer -->
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
